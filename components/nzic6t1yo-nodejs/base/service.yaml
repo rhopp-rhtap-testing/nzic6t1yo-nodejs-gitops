@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: nzic6t1yo-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nzic6t1yo-nodejs 
+  name: nzic6t1yo-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: nzic6t1yo-nodejs 
